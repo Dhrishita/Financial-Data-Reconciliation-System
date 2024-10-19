@@ -1,13 +1,15 @@
 # Financial-Data-Reconciliation-System
 This tool automates the process of reconciling transactions between a company ledger and bank transactions, highlighting discrepancies and exporting results to Google Sheets.
 
+This README provides detailed steps for setting up the Google Sheets API, including creating a Google Cloud project, enabling the API, creating a service account, and sharing the Google Sheets spreadsheet. Adjust the sections and details further if needed to match your specific project setup and instructions.
+
 ## Table of Contents
 
 - [Introduction](#introduction)
 - [Features](#features)
 - [Requirements](#requirements)
 - [Installation](#installation)
-- [Usage](#usage)
+- [Setup](#setup)
 - [Code Structure](#codestructure)
 - [Contact](#contact)
 
@@ -42,16 +44,46 @@ This project connects to two MySQL databases (company_ledger_db and bank_transac
    pip install -r requirements.txt
 
 3. Setup MySQL:
+   
 - Ensure MySQL server is running.
 - Create databases company_ledger_db and bank_transactions_db.
 - Populate databases with transaction data.
 
 4. Setup Google Sheets API:
-   - Create a Google Cloud Project:
-      - Go to the Google Cloud Console and create a new project.
+   
+- Create a Google Cloud Project:
+  - Go to the Google Cloud Console and create a new project.
+    
+- Enable Google Sheets API:
+  - In the Google Cloud Console, navigate to the **"APIs & Services" > "Library" section.**
+  - Search for **"Google Sheets API"** and enable it for your project.
+ 
+- Create Service Account:
+  - Go to the Google Cloud Console and navigate to **"APIs & Services" > "Credentials".**
+  - Click on **"Create credentials"** and select "Service account".
+  - Fill in the details and click "Create".
+  - Assign the **"Project" > "Editor"** role to the service account.
+  - Download the JSON credentials file (credentials.json).
+ 
+- Share Google Sheets Spreadsheet:
+  - Create a new Google Sheets spreadsheet or use an existing one.
+  - Share the spreadsheet with the email address associated with the service account (found in credentials.json).
+
+5. Configure Credentials:
+
+- Place the downloaded credentials.json file in the root directory of your project.
+
+6. Run the script:
+
+   ```bash
+   python bank.py
+
+7. View results:
+
+- Check the Google Sheets spreadsheet (SPREADSHEET_ID) for reconciliation results.
 
 
-6. The system will start and wait for someone to stand in front of the camera. If the face is recognized, access will be granted. If the face is not recognized, an email with an OTP and the photo of the individual will be sent to the owner's email.
+
 
 ## Code Structure
 - 'main.py': The main script to run the face recognition system.
