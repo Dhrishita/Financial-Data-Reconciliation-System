@@ -22,10 +22,10 @@ This project connects to two MySQL databases (company_ledger_db and bank_transac
 
 ## Features
 
-- **Database Connection:** - The tool connects to two distinct MySQL databases to retrieve necessary transaction data, ensuring that it remains up to date and accurate.
-- **Reconciliation Logic:** - The heart of the tool lies in its ability to compare transactions from both sources, identifying discrepancies that may require further investigation.
-- **Google Sheets Integration:** - By exporting results to Google Sheets, users can easily access, analyze, and share reconciliation results, fostering collaboration among finance teams.
-- **Error Handling:** - The tool is equipped to handle various types of data discrepancies, ensuring that users receive clear and actionable reports.
+- **Database Connection** - The tool connects to two distinct MySQL databases to retrieve necessary transaction data, ensuring that it remains up to date and accurate.
+- **Reconciliation Logic** - The heart of the tool lies in its ability to compare transactions from both sources, identifying discrepancies that may require further investigation.
+- **Google Sheets Integration** - By exporting results to Google Sheets, users can easily access, analyze, and share reconciliation results, fostering collaboration among finance teams.
+- **Error Handling** - The tool is equipped to handle various types of data discrepancies, ensuring that users receive clear and actionable reports.
 
 ## Requirements
 
