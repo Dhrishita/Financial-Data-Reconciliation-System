@@ -4,7 +4,7 @@ This tool automates the process of reconciling transactions between a company le
 This README provides detailed steps for setting up the Google Sheets API, including creating a Google Cloud project, enabling the API, creating a service account, and sharing the Google Sheets spreadsheet. Adjust the sections and details further if needed to match your specific project setup and instructions.
 
 ## Table of Contents
-
+- [Problem Statement](#problemstatement)
 - [Introduction](#introduction)
 - [Features](#features)
 - [Requirements](#requirements)
@@ -12,18 +12,23 @@ This README provides detailed steps for setting up the Google Sheets API, includ
 - [Setup](#setup)
 - [Contact](#contact)
 
+## Problem Statement
+
+In the financial domain, reconciling transactions between a company's ledger and bank statements is a crucial task for maintaining accurate financial records. Manual reconciliation can be time-consuming, error-prone, and often leads to discrepancies that can affect financial reporting and decision-making. Companies need an efficient method to automate this process to save time, reduce errors, and enhance financial accuracy.
+
 ## Introduction
 
 This project connects to two MySQL databases (company_ledger_db and bank_transactions_db) to fetch transaction data. It identifies discrepancies such as missing transactions and mismatches in amounts between the two databases. Results are then exported to a Google Sheets spreadsheet using the Google Sheets API for further analysis and reporting.
 
 ## Features
 
-- **Database Connection:** Connects to MySQL databases to fetch transactional data.
-- **Data Reconciliation:** Identifies transactions missing in either the company ledger or bank transactions, as well as mismatches in amounts.
-- **Google Sheets Integration:** Uses Google Sheets API to export reconciliation results for easy review and analysis.
-- **Error Handling:** Handles various types of data discrepancies and ensures accurate reporting.
+- **Database Connection:** - The tool connects to two distinct MySQL databases to retrieve necessary transaction data, ensuring that it remains up to date and accurate.
+- **Reconciliation Logic:** - The heart of the tool lies in its ability to compare transactions from both sources, identifying discrepancies that may require further investigation.
+- **Google Sheets Integration:** - By exporting results to Google Sheets, users can easily access, analyze, and share reconciliation results, fostering collaboration among finance teams.
+- **Error Handling:** - The tool is equipped to handle various types of data discrepancies, ensuring that users receive clear and actionable reports.
 
 ## Requirements
+
 - Python 3.x
 - MySQL Connector (mysql-connector-python)
 - Pandas (pandas)
@@ -31,6 +36,7 @@ This project connects to two MySQL databases (company_ledger_db and bank_transac
   
 ## Installation
 ## Setup
+
 1. Clone this repository to your Raspberry Pi:
    
    ```bash
