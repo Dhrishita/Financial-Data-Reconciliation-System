@@ -10,7 +10,6 @@ This README provides detailed steps for setting up the Google Sheets API, includ
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Setup](#setup)
-- [Code Structure](#codestructure)
 - [Contact](#contact)
 
 ## Introduction
@@ -81,15 +80,6 @@ This project connects to two MySQL databases (company_ledger_db and bank_transac
 7. View results:
 
 - Check the Google Sheets spreadsheet (SPREADSHEET_ID) for reconciliation results.
-
-
-
-
-## Code Structure
-- 'main.py': The main script to run the face recognition system.
-- 'face_recognition.py': Contains the face recognition logic using OpenCV.
-- 'email_notification.py': Handles sending email notifications for unrecognized faces.
-- 'utils.py': Utility functions for the system.
 
 ## Contact
 If you have any questions or suggestions, feel free to open an issue or contact:
