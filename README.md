@@ -42,9 +42,9 @@ This project connects to two MySQL databases (company_ledger_db and bank_transac
    pip install -r requirements.txt
 
 3. Setup MySQL:
-   - Ensure MySQL server is running.
-   - Create databases company_ledger_db and bank_transactions_db.
-   - Populate databases with transaction data.
+- Ensure MySQL server is running.
+- Create databases company_ledger_db and bank_transactions_db.
+- Populate databases with transaction data.
 
 4. Setup Google Sheets API:
    - Create a Google Cloud Project:
